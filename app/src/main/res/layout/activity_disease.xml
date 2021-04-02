@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseActivity"
+    android:background="@color/page_background">
+
+    <TextView
+        android:id="@+id/txtDisease"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat"
+        android:padding="16dp"
+        android:text="@string/diseases"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@id/diseaseRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/suggestionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/suggestion_txt"
+        app:layout_constraintTop_toBottomOf="@id/txtDisease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="@color/text_black"/>
+
+    <TextView
+        android:id="@+id/suggestionTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suggestion_txt2"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/suggestionTxt"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        android:textColor="@color/text_black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/suggestionBtn"
+        android:text="@string/u_make_a_suggestion_u"
+        android:background="@drawable/rounded_button"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/suggestionTxt2"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/diseaseRecyclerView"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDisease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

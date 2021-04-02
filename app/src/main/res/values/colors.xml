@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_background">#FFFFFF</color>
+    <color name="stroke">#000000</color>
+    <color name="text_black">#000000</color>
+    <color name="text_blue">#000232</color>
+    <color name="text_blue_navy">#00034C</color>
+    <color name="search_bar">#e2e2e2</color>
+    <color name="chosen_symptoms_list_background">#41BCC8</color>
+    <color name="green_btn_background">#1DAE02</color>
+    <color name="gradient_blue">#A4EEFF</color>
+    <color name="gradient_white">#CFF6FF</color>
+    <color name="green_box_background">#4BB84F</color>
+    <color name="green_stroke">#075E0B</color>
+    <color name="text_gray">#6A6A6A</color>
+    <color name="orange_btn">@android:color/holo_orange_dark</color>
+    <color name="holo_blue">@android:color/holo_blue_dark</color>
+    <color name="subPrimary">#308F98</color>
+    <color name="text_primary">#308F98</color>
+
+
+    <color name="colorPrimary">#308F98</color>
+    <color name="colorPrimaryDark">#1A727A</color>
+    <color name="colorAccent">#2C43C3</color>
+    <color name="txtOpen">#338F02</color>
+    <color name="txtClose">#E33737</color>
+    <color name="txtColorVeryRare">#B30202</color>
+</resources>

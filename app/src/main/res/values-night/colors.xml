@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="page_background">#121212</color>
+    <color name="stroke">#E0E0E0</color>
+    <color name="text_black">#F0F0F0</color>
+    <color name="text_blue">#C8C8C8</color>
+    <color name="text_blue_navy">#F0F0F0</color>
+    <color name="search_bar">#5A5A5A</color>
+    <color name="chosen_symptoms_list_background">#454545</color>
+    <color name="green_btn_background">#3D50BA</color>
+    <color name="gradient_blue">#505050</color>
+    <color name="gradient_white">#717171</color>
+    <color name="green_box_background">#4B73B8</color>
+    <color name="green_stroke">#3D50BA</color>
+    <color name="text_gray">#B5B5B5</color>
+    <color name="orange_btn">#3D50BA</color>
+    <color name="holo_blue">#3D50BA</color>
+    <color name="subPrimary">#72B5BC</color>
+    <color name="text_primary">#5C9BA1</color>
+
+
+    <color name="colorPrimary">#252525</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#2C43C3</color>
+    <color name="txtOpen">#338F02</color>
+    <color name="txtClose">#E33737</color>
+    <color name="txtColorVeryRare">#B30202</color>
+</resources>

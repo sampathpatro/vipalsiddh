@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisDescActivity"
+    android:background="@color/page_background"
+    >
+
+    <LinearLayout
+        android:id="@+id/potDisTitleHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potDisName"
+            android:textAlignment="center"
+            android:text="@string/potDisName"
+            android:fontFamily="@font/montserrat"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/potDisSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="16dp"
+            android:text="Here's what we know about"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/montserrat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/potDisSerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/potDisTitleHolder"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp">
+
+        <TextView
+            android:id="@+id/potDiseaseSeriousness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seriousness"
+            android:textSize="16sp"
+            android:textColor="@color/text_blue"
+            android:fontFamily="@font/montserrat"/>
+
+        <ImageView
+            android:id="@+id/pot_imgSeriousness"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:textAlignment="textEnd"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/potDisTitleHolder">
+
+        <TextView
+            android:id="@+id/potDiseaseSpread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/spread"
+            android:textSize="16sp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_blue"
+            android:fontFamily="@font/montserrat" />
+
+        <TextView
+            android:id="@+id/pot_txtSpread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_blue_navy"
+            android:textAlignment="viewEnd"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/symListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:paddingTop="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/txtSympList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/symptoms_list"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/potDisSerLayout" />
+
+        <TextView
+            android:id="@+id/potDisSymList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSympList" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/your_symptoms"
+        app:layout_constraintTop_toBottomOf="@id/symListLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text_gray"
+        android:text="Your Symptoms: Fever, Chest Pain, Headache, Insomnia"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/potDisDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/lorem_ipsum"
+        app:layout_constraintTop_toBottomOf="@id/your_symptoms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/mapBtn"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text_black"
+        />
+
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/look_for_hospitals"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/orange_btn"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

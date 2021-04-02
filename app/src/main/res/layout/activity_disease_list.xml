@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtDiseaseList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat"
+        android:padding="16dp"
+        android:text="@string/diseases_list"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:id="@+id/suggestion_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_any_suggestions"
+            android:textColor="@color/text_black"
+            android:fontFamily="@font/montserrat"/>
+
+        <TextView
+            android:id="@+id/let_us_know_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/let_us_know"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/text_blue_navy"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/diseaseListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsConditionsActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/formalitiesTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/some_formalities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/smiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formalitiesTxt"
+        android:textSize="92sp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/formalities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formalities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smiley"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/termsofusage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="8dp"
+        android:text="@string/underline_terms"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/formalities"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:maxWidth="200dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/proceed_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/accepttc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:maxWidth="250dp"
+            android:textColor="@color/text_gray"
+            android:paddingStart="8dp"
+            android:text="@string/accepttctxt" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/lets_get_started"
+        android:layout_marginHorizontal="32dp"
+        android:fontFamily="@font/montserrat"
+        android:background="@color/text_primary"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

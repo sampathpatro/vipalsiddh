@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/chosen_symptoms_list_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/chosenSymptomsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/symptomName"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:textColor="@android:color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/holo_blue"/>
+
+</LinearLayout>
+
+
+
+
