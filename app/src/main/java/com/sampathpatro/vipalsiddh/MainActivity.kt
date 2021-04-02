@@ -1136,8 +1136,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         for (dis in diseasesList) {
-            for (s in dis.diseaseSymptoms) {
-                symptomsList.add(s)
+            for (symp in dis.diseaseSymptoms) {
+                symptomsList.add(symp)
             }
         }
 
